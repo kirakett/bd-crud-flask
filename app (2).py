@@ -7,10 +7,10 @@ app = Flask(__name__)
 app.json.ensure_ascii = False
 
 
-connection = psycopg2.connect(user="postgres",
+connection = psycopg2.connect(user="change_me",
                               password="change_me",
-                              host="localhost",
-                              port="5432",
+                              host="change_me",
+                              port="change_me",
                               database="postgres", cursor_factory=RealDictCursor)
 connection.autocommit = True
 
